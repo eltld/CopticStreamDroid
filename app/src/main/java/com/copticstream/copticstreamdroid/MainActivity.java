@@ -1,5 +1,7 @@
 package com.copticstream.copticstreamdroid;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,7 +12,8 @@ import demo.StreamTest;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    private Fragment fragment;
+    private FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +23,9 @@ public class MainActivity extends ActionBarActivity {
 //        Intent intent = new Intent(this, StreamTest.class);
 //        startActivity(intent);
 
-        
+        fragment = new FragmentMain();
+        fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().add(R.id.mainContent,fragment).commit();
 
     }
 
