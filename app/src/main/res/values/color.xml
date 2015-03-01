@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#ffffff</color>
+    <color name="drawer_text">#bdc3c7</color>
     <color name="light_dark">#7f8c8d</color>
     <color name="dark">#333333</color>
 </resources>
