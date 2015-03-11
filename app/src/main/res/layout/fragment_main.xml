@@ -13,8 +13,10 @@
         android:id="@+id/logo_holder"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_dark"
-        android:orientation="vertical">
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_weight=".5">
+
 
     </LinearLayout>
 
@@ -22,11 +24,40 @@
         android:id="@+id/verse_holder"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_dark"
+        android:background="@color/white"
         android:orientation="vertical"
         android:layout_weight="1">
 
+
+
+
+        <TextView
+            android:id="@+id/english_verse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_height="1dip"
+            android:background="@color/light_dark" />
+
+        <TextView
+            android:id="@+id/arabic_verse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+
+
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/login_holder"
@@ -34,51 +65,28 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        android:layout_weight="1">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight=".5">
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-
-            <ImageView
-                android:id="@+id/gmail"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g"
-                android:padding="10dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
+                android:textSize="12sp"
+                android:text="Connect With"/>
 
             <ImageView
                 android:id="@+id/facebook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/f"
-
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/gmail"
                 />
 
-            <ImageView
-                android:id="@+id/m"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/g"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/gmail"
-                />
         </RelativeLayout>
 
     </LinearLayout>

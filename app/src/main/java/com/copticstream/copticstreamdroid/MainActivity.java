@@ -31,11 +31,12 @@ import java.util.ArrayList;
 
 
 import custom.DrawerItem;
+import demo.Constants;
 import util.DrawerListBaseAdapter;
 import util.VolleySingleton;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements Constants{
     private static final String TAG = "MainActivity";
 
     public ListView drawerList;
@@ -44,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
 
     private ArrayList<DrawerItem> drawerItems;
 
-    private Fragment fragment;
+    private FragmentMain fragment;
     private FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,9 +78,6 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         });
-
-
-
 
 
 
