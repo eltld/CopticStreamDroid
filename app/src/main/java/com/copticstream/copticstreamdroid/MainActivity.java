@@ -72,6 +72,8 @@ public class MainActivity extends ActionBarActivity implements Constants{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch ((int) id){
                     case 0 :
+                        Toast.makeText(getParent(),"First Clicked", Toast.LENGTH_LONG).show();
+
 
                         break;
 
